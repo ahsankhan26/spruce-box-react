@@ -72,12 +72,12 @@ function Details() {
           <div className="mt-5">
             <img className="gridImg" src={ShoppingBasket} alt="Boxes" />
             <button
-              className={`gridBtn ${activeBtnTwo ? 'gridBtn-active' : ''}`}
+              className={`gridBtn ${activeBtnThree ? 'gridBtn-active' : ''}`}
               onMouseOver={() => {
-                onGetHovered('second', true);
+                onGetHovered('third', true);
               }}
               onMouseOut={() => {
-                onGetHovered('second', false);
+                onGetHovered('third', false);
               }}
             >
               SB Marketplace
@@ -144,12 +144,12 @@ function Details() {
           <div>
             <img className="gridImg" src={ConstructionTool} alt="Boxes" />
             <button
-              className={`gridBtn ${activeBtnThree ? 'gridBtn-active' : ''}`}
+              className={`gridBtn ${activeBtnTwo ? 'gridBtn-active' : ''}`}
               onMouseOver={() => {
-                onGetHovered('third', true);
+                onGetHovered('second', true);
               }}
               onMouseOut={() => {
-                onGetHovered('third', false);
+                onGetHovered('second', false);
               }}
             >
               SB Pro
@@ -165,7 +165,7 @@ function Details() {
               onMouseOver={() => {
                 onGetHovered('forth', true);
               }}
-              onMouseOver={() => {
+              onMouseOut={() => {
                 onGetHovered('forth', false);
               }}
             >
